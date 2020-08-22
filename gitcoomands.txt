@@ -1,0 +1,91 @@
+git init
+-->initialize git
+
+git status
+-->get status 
+
+git add <file name>
+-->add file in staging area
+
+git add .
+-->add all changed files in staging area 
+
+git commit -m "message"
+-->commit file (-m for message)
+
+git commit -am "message"
+-->directly commit the file without stagging (-a stands for add file)
+
+(add-->add in staging araea => commit--> ad in local repo
+head is on last commit file)
+
+git log 
+--> to see all logs
+
+git  rm --cached <filename>
+-->unstage file(remove from stagging area)
+
+				-------design branch------------------------	
+				|					    \
+---master branch--------------------------master branch(merged dev branch)-----(mergeed design branch)master branch-------
+		   |                    /
+		    ----dev branch------
+
+git branch <branch name>
+-->create new branch
+
+git checkout <branch name>
+--> switch to another branch
+
+git merge <branch name>
+-->to merge a branch into current branch(u shld be into current branch)
+
+----------------------GITHUB-------------------------
+
+git remote add origin <repo link>
+
+git remote -v
+--> origin version
+
+git push -u origin master
+-->push code from local repo to remote repo(for first time)
+
+git push origin <branch name>
+
+{
+(git push -is used to push code from local to remote repo)
+(git fetch -is used to fetch code from remote to local repo)
+(git merge -is used to mrege fetched data into current branch)
+(git pull -is combo of fetch+merge)
+}
+
+.gitignore(ext)
+{
+includes file name which doesn't uplode on git
+}
+
+
+fork
+--> used to create a copy of other user's repo in ur account
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
